@@ -1,7 +1,15 @@
 /*
- * GET home page.
+ * GET 'About us' page
  */
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+module.exports.about = function(req, res){
+  res.render('index', { title: 'About' });
+};
+
+/*
+ * GET 'Sign in' page
+ */
+
+module.exports.signin = function(req, res){
+  res.render('index', { title: 'Sing in' });
 };
