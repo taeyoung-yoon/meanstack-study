@@ -3,7 +3,7 @@
  */
 
 module.exports.homelist = function(req, res){
-  res.render('index', { title: 'Home' });
+  res.render('locations-list', { title: 'Home' });
 };
 
 /*
@@ -11,7 +11,7 @@ module.exports.homelist = function(req, res){
  */
 
 module.exports.locationInfo = function(req, res){
-  res.render('index', { title: 'Location Info' });
+  res.render('location-info', { title: 'Location Info' });
 };
 
 /*
