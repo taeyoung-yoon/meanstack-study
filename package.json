@@ -11,11 +11,7 @@
   },
   "dependencies": {
     "express": "3.4.*",
-<<<<<<< HEAD
     "jade": "*",
     "mongoose": "3.8.*"
-=======
-    "jade": "*"
->>>>>>> 1d1a460a81054ee200bf4ad0ae26671966073b79
   }
 }
