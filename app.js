@@ -6,8 +6,9 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-
 var app = express();
+
+require('./app_server/models/db');
 
 console.log('__dirname: ', __dirname);
 // all environments
@@ -23,6 +24,9 @@ app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+
+//console.log('NODE_ENV', process.env.NODE_ENV);
+//console.log('app.get(env)', app.get('env'));
 
 // development only
 if ('development' == app.get('env')) {
