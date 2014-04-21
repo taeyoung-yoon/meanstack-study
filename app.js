@@ -6,15 +6,12 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-<<<<<<< HEAD
+
 var app = express();
 
 require('./app_server/models/db');
-=======
 
 var app = express();
->>>>>>> 1d1a460a81054ee200bf4ad0ae26671966073b79
-
 console.log('__dirname: ', __dirname);
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -30,12 +27,9 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-<<<<<<< HEAD
 //console.log('NODE_ENV', process.env.NODE_ENV);
 //console.log('app.get(env)', app.get('env'));
 
-=======
->>>>>>> 1d1a460a81054ee200bf4ad0ae26671966073b79
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
